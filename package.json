@@ -13,15 +13,15 @@
 , "licenses" : [ { "type" : "MIT" } ]
 , "repositories" :
   [ { "type" : "git"
-    , "url" : "https://github.com/mariano/node-db-oracle.git"
+    , "url" : "https://github.com/cdpfeetfirst/node-db-oracle.git"
     }
   ]
 , "main" : "./db-oracle"
 , "scripts" :
-  { "install": "node-waf configure build"
+  { "install": "node-gyp configure build"
   , "preuninstall": "rm -rf build/*"
-  , "test" : "node-waf test"
-  , "doc" : "node-waf doc"
+  , "test" : "node-gyp test"
+  , "doc" : "node-gyp doc"
   }
 , "devDependencies" :
   { "nodeunit" : "*"
